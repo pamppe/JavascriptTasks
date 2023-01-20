@@ -6,27 +6,29 @@
 </head>
 <body>
 
-<script>
+<h2>Tehtävä.1</h2>
+<p>
+
+
+  <script>
+
+      let kuha;
+
+
+      kuha = +prompt("Anna kuhan mitta senttimetrinä");
+      let vajaa = 37-kuha;
+
+      if (kuha >= 37) {
+          window.confirm(kuha + " cm " + "Onnittelut sait hyvän kokoisen kuhan!");
+      }
+      else if (kuha < 37) {
+          window.confirm(kuha + " cm " + "Kuha on alamittainen. Laita kuha takaisin veteen! " + vajaa + " cm puuttuu sallitusta rajasta.");
+      }
 
 
 
-    function vastakkain() {
-        let numero = prompt("Anna lukuja erottele ne välilyönnillä").split(" ");
-        document.write(numero);
-        console.log(numero);
 
-        function takaperin() {
-            let vaarinpain = numero.reverse();
-            document.write('<br>', vaarinpain);
-            console.log(vaarinpain);
-        }
-        takaperin();
-    }
-    vastakkain();
-
-
-</script>
-
+  </script>
 
 
 </body>

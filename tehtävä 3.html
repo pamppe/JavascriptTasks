@@ -5,26 +5,44 @@
     <title>Title</title>
 </head>
 <body>
-<ul id="nimielementti"></ul>
+    <h2>Tehtävä.3</h2>
+<p>
+
+
 <script>
 
-    function koirat() {
-        let nimilista = prompt("Anna kuusi koiran nimee ja erottele ne välilyönnillä").split(" ");
-        let id = document.getElementById("nimielementti");
-        let s_nimilista = nimilista.sort((a,b)=> a.localeCompare(b));
+let sukupuoli, hemo;
 
-        s_nimilista.forEach((object)=>{
-            let li = document.createElement("li");
-            li.innerText = object;
-            id.appendChild(li);
-        })
-    }
-    koirat();
 
+sukupuoli = prompt("Syötä sukupuoli (Mies/Nainen) Syötä isolla alkukirjaimella");
+hemo = +prompt("Syötä hemoglobiini arvosi")
+
+if (sukupuoli == "Mies" && hemo >= "134" && hemo <= "195") {
+    document.write(hemo + " g/l" + " Hemoglobiini arvosi ovat normaalit")
+
+}
+if(sukupuoli == "Mies" && hemo < "134") {
+    document.write(hemo + " g/l" + " Hemoglobiini arvosi ovat liian alhaiset")
+}
+
+if (sukupuoli == "Mies" && hemo > "195") {
+    document.write(hemo + " g/l" + " Hemoglobiini arvosi ovat liian korkeat")
+}
+
+
+if (sukupuoli == "Nainen" && hemo >= "117" && hemo <= "175") {
+    document.write(hemo + " g/l" + " Hemoblobiini arvosi ovat normaalit")
+}
+
+if (sukupuoli == "Nainen" && hemo < "117") {
+    document.write(hemo + " g/l" + " Hemoglobiini arvosi ovat liian alhaiset")
+}
+
+if (sukupuoli == "Nainen" && hemo > "175") {
+    document.write(hemo + " g/l" + " Hemoglobiini arvosi ovat liian korkeat")
+}
 
 
 </script>
-
-
 </body>
 </html>

@@ -5,22 +5,42 @@
     <title>Title</title>
 </head>
 <body>
-<ol id="nimielementti"></ol>
+    <h2>Tehtävä.2</h2>
+<p>
+
+
 <script>
 
-  function nimet() {
-    let nimilista = prompt("Anna pari nimee ja erottele ne välilyönnillä").split(" ");
-    let id = document.getElementById("nimielementti");
+    let nimi;
 
-    nimilista.forEach((object)=>{
-        let li = document.createElement("li");
-        li.innerText = object;
-        id.appendChild(li);
-    })
+    let random;
+
+    nimi = prompt("Anna nimesi.");
+    random = (Math.ceil(Math.random()*4));
+
+
+    if (random == 1) {
+      window.confirm(nimi + ", Olet Rohkelikko!")
   }
-    nimet();
+    if (random == 2) {
+        window.confirm(nimi + ", Olet Luihuinen!")
+    }
+
+    if (random == 3) {
+        window.confirm(nimi + ", Olet Puuskupuh!")
+    }
+    else if (random == 4) {
+        window.confirm(nimi + ", Olet Korpinkynsi!")
+    }
+
+    document.write("Tervetuloa! " + nimi);
+
+
+
 
 </script>
+
+
 
 
 </body>

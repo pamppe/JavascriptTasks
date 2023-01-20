@@ -5,27 +5,34 @@
     <title>Title</title>
 </head>
 <body>
+    <h2>Tehtävä.4</h2>
+<p>
 
 <script>
 
-  function nolla() {
+    let raha = 0;
+    let bussilippu = 0;
 
-    let numerot = [];
 
-    while (true) {
-      let input = prompt("Numeroita");
+    raha = +prompt(" Paljonko rahaa sinulla on? ")
+    bussilippu = +prompt(" Paljonko bussilippu maksaa ")
 
-      if (input == 0) {
-        return false;
-      }
-      numerot.push(input);
-      document.write(numerot); //Jotain outoo tapahtuu document writellä, mutta tämä toimii oikein console logilla
+
+    if (bussilippu <= raha) {
+        let lopullinen = raha - bussilippu
+
+        document.write(" Rahasi riittävät bussilippuun. Jäljelle jää " + lopullinen)
+
     }
 
-  }
-      nolla();
+    else {
+        document.write(" Rahasi eivät riitä: " + raha)
+    }
+
+
 
 </script>
+
 
 
 </body>

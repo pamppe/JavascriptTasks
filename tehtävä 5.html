@@ -5,28 +5,31 @@
     <title>Title</title>
 </head>
 <body>
+        <h2>Tehtävä.5</h2>
 
 <script>
 
-  function samanumero() {
+    if ( window.confirm('Lasketaanko neliöjuuri?')){
 
-    let numerot = [];
+        let luku = prompt('Anna luku!');
 
-    while (true) {
-      let input = prompt("Numeroita");
-
-     for (var i = 0; i < numerot.length; i++) {
-         if (input == numerot[i]) {
-             window.alert("Älä laita samaa numeroa!");
-             return false;
-         }
-     }
-        numerot.push(input);
+    if (Number(luku) < 0){
+        document.write('Negatiivisen luvun neliöjuuri ei ole määritelty. ');
     }
-  }
-  samanumero();
 
+    else {
+        const tulos = Math.sqrt(luku);
+        document.write(tulos);
+    }
+}
+
+    else {
+    document.write('Neliöjuurta ei lasketa');
+}
 </script>
+
+
+
 
 </body>
 </html>
