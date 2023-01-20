@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  function samanumero() {
+
+    let numerot = [];
+
+    while (true) {
+      let input = prompt("Numeroita");
+
+     for (var i = 0; i < numerot.length; i++) {
+         if (input == numerot[i]) {
+             window.alert("Älä laita samaa numeroa!");
+             return false;
+         }
+     }
+        numerot.push(input);
+    }
+  }
+  samanumero();
+
+</script>
+
+</body>
+</html>

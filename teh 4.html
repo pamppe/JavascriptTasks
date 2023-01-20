@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  function nolla() {
+
+    let numerot = [];
+
+    while (true) {
+      let input = prompt("Numeroita");
+
+      if (input == 0) {
+        return false;
+      }
+      numerot.push(input);
+      document.write(numerot); //Jotain outoo tapahtuu document writellä, mutta tämä toimii oikein console logilla
+    }
+
+  }
+      nolla();
+
+</script>
+
+
+</body>
+</html>

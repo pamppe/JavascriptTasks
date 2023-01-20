@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+
+    let arr = prompt("Anna lukuja ja erottele luivut välilyönneillä").split(" ");
+    const etsiMedian = (arr = []) => {
+        const sorted = arr.slice().sort((a, b) => {
+            return a - b;
+        })
+        if(sorted.length % 2 === 0){
+            const eka = sorted[sorted.length / 2 - 1];
+            const toka = sorted[sorted.length / 2];
+            return (eka + toka) / 2;
+        }
+        else{
+            const mid = Math.floor(sorted.length / 2);
+            return sorted[mid];
+        }
+    }
+    document.write(etsiMedian(arr));
+
+
+</script>
+
+</body>
+</html>

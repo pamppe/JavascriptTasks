@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="nimielementti"></ul>
+<script>
+
+    function koirat() {
+        let nimilista = prompt("Anna kuusi koiran nimee ja erottele ne välilyönnillä").split(" ");
+        let id = document.getElementById("nimielementti");
+        let s_nimilista = nimilista.sort((a,b)=> a.localeCompare(b));
+
+        s_nimilista.forEach((object)=>{
+            let li = document.createElement("li");
+            li.innerText = object;
+            id.appendChild(li);
+        })
+    }
+    koirat();
+
+
+
+</script>
+
+
+</body>
+</html>
