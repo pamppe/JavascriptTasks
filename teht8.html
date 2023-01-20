@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  function fibonacci(num) {
+    if(num < 2) {
+      return num;
+    }
+    else {
+      return fibonacci(num - 1) + fibonacci(num - 2);
+    }
+  }
+
+  let nTerms = +prompt('Monennenko Fibonaccin lukujonossa esiintyvän luvun haluat');
+
+  if(nTerms <=0) {
+    window.alert('Anna positiivinen luku');
+  }
+  else {
+    for(let i = 0; i < nTerms; i++) {
+      document.write("<br>");
+      document.write(fibonacci(i));
+    }
+  }
+
+
+
+
+</script>
+
+
+</body>
+</html>

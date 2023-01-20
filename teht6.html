@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  function tasaluku(taulukko) {
+    let luku = [];
+
+    for(let i=0; i < taulukko.length; i++) {
+      let num = taulukko[i];
+      if(num % 2 === 0) {
+        luku.push(num);
+      }
+    }
+    return luku;
+  }
+  let taulukko =[20,11,12,4,55,10,3,5,2,1];
+  let tulos = tasaluku(taulukko);
+  document.write("Parillisia on " + tulos);
+
+
+</script>
+
+</body>
+</html>

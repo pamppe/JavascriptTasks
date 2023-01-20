@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  function muunnos(maara) {
+    let muunnosmaara = maara * 3.785;
+    return muunnosmaara;
+  }
+
+  let luku;
+  luku = +prompt("Anna bensa määrä gallonoina");
+
+  let tulos = muunnos(luku);
+
+  document.write(luku + " gallonaa on " + tulos + " bensaa litroina");
+
+
+</script>
+
+</body>
+</html>

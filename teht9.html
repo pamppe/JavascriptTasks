@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  let f = +prompt("Anna fibonacci luku")
+
+  fibo = n => fibo2([0, 1], n - 2)
+
+  fibo2 = (a, n) => n === 0 ? a
+          : fibo2(a.concat(a[a.length - 2] + a[a.length - 1]), n - 1)
+
+  document.write(fibo(f));
+
+
+</script>
+
+
+</body>
+</html>
