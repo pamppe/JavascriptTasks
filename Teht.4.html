@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+        <h2>4.Tehtävä</h2>
+
+<p>
+    <script>
+
+        function suorakulmio_pinta_ala(a, b)
+        {
+            let pinta_ala = a * b;
+            return pinta_ala;
+        }
+
+        function suorakulmio_piiri(a, b)
+        {
+            let piiri = 2*(a + b);
+            return piiri;
+        }
+
+        let kanta = window.prompt("Kerro suorakulmaisen kolmion kanta")
+        let korkeus = window.prompt("Kerro suorakulmaisen kolmion korkeus")
+        let a = +kanta;
+        let b = +korkeus;
+        document.write("Pinta-ala = " + suorakulmio_pinta_ala(a, b) + "<br>");
+        document.write("piiri = " + suorakulmio_piiri(a, b));
+
+    </script>
+
+</body>
+</html>

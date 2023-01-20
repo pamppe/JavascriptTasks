@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+        <h2>3.Tehtävä</h2>
+<p>
+    <script>
+        function calculateArea(myRadius) {
+            return (myRadius * myRadius * Math.PI);
+        }
+
+        function MyArea() {
+            let area = calculateArea(myRadius);
+            document.write("Ympyrän säde on " + myRadius + " cm. Joten ympyrän säteen pinta-ala on " + area.toFixed(2) + " senttimetriä. <br>" + myRadius + " cm edustaa käyttäjän syöttämää numeroa <br>" + area.toFixed(2) + " edustaa ympyrän sädettä käyttäjän syötteen perusteella.");
+
+        }
+
+        let myRadius = parseFloat(prompt("Syötä ympyrän säde senttimetreinä:", 0));
+        MyArea(myRadius);
+
+    </script>
+
+</body>
+</html>

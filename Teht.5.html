@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+        <h2>5.Tehtävä</h2>
+<p>
+    <script>
+
+        // Tämä ei toiminut functioilla vaikka mitään vikaa ei ollut. Katsottu opettajan kanssa!
+        function summa(eka, toka, kolmas)
+        {
+            let sum = eka + toka + kolmas;
+            return sum;
+        }
+
+        function tulo(eka, toka, kolmas)
+        {
+            let tulos = eka * toka * kolmas;
+            return tulos;
+        }
+
+        function keskiarvo(eka, toka, kolmas)
+        {
+            let keski = (eka + toka + kolmas) / 3;
+            return keski;
+        }
+        // Tämä toimii näinkin :D
+        let lasku1 = +prompt("Anna numero")
+        let lasku2 = +prompt("Anna toinen numero")
+        let lasku3 = +prompt("Anna kolmas numero")
+
+        document.write("summa = " + (lasku1 + lasku2 + lasku3) + "<br>");
+        document.write("tulos = " + (lasku1 * lasku2 * lasku3) + "<br>");
+        document.write("keskiarvo = " + (lasku1 + lasku2 + lasku3 / 3).toFixed(2));
+
+    </script>
+</body>
+</html>

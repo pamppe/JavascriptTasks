@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+
+  let saldo = 0, vuosikorko = 0;
+  saldo = +prompt('Ilmoita tilin saldo ');
+  vuosikorko = +prompt('Ilmoita vuosikorko ');
+  const korkotulos = Number(saldo) / 100 * Number(vuosikorko);
+  const saldotulos = Number(saldo) + Number(korkotulos);
+
+
+  document.write('Koron määrä on ' + Number(korkotulos).toFixed(2) + '€<br>' + 'Tilin saldo koron jälkeen on ' + Number(saldotulos).toFixed(2));
+
+
+</script>
+
+
+
+</body>
+</html>
