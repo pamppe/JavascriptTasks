@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  function suurin(a, b, c) {
+    if (a >= b && a >= c) {
+      return a + " on suurin";
+    }
+
+    else if (b >= a && b >= c) {
+      return b + " on suurin";
+    }
+
+    else {
+      return c + " on suurin";
+    }
+  }
+
+    let num1 = +prompt("Anna numero");
+    let num2 = +prompt("Anna toinen numero");
+    let num3 = +prompt("Anna kolmas numero");
+    document.write(suurin(num1, num2, num3));
+
+
+
+</script>
+
+</body>
+</html>
