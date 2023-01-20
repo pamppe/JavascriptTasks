@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <h2>Tehtävä.1</h2>
+
+<script>
+
+  const numero = parseInt(prompt("Anna kokonaisluku: "));
+
+  // Tarkista jos numero on negatiivinen
+  if (numero < 0) {
+    document.write("Error. Numero ei ole positiivinen luku");
+  }
+
+// Jos numero on 0
+  else if (numero === 0) {
+    document.write("Kokonaisluku " + numero + " on 1.");
+  }
+
+// Jos numero positiivinen
+  else {
+      let fact = 1;
+      for (i = 1; i <= numero; i++) {
+          fact *= i;
+      }
+      document.write("Kokonaisluku " + numero + " on " + fact);
+  }
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h2>Tehtävä.3</h2>
+
+<script>
+    function leap_year_range(st_year, end_year) {
+        let year_range = [];
+        for (let i = st_year; i <= end_year; i++)
+        {
+            year_range.push(i);
+        }
+        let new_array = [];
+        year_range.forEach(
+            year => {
+                if (test_LeapYear(year))
+                    new_array.push(year);
+            });
+        return new_array;
+    }
+    function test_LeapYear(year) {
+        if ((year % 4 === 0 && year % 100 !== 0) || (year % 100 === 0 && year % 400 === 0)) {
+            return year;
+        } else {
+            return false;
+        }
+    }
+    year1 = prompt("Anna aloitus vuosi");
+    year2 = prompt("Anna lopetus vuosi")
+    document.write(leap_year_range(year1, year2));
+
+</script>
+
+
+</body>
+</html>

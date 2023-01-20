@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+
+    const numero = parseInt(prompt("Anna positiivinen luku: "));
+    let alkuluku = true;
+
+
+    if (numero == 1) {
+        document.write("1 ei ole alkuluku eikä kokonaisluku");
+}
+
+
+    else if (numero > 1) {
+
+
+    for (let i = 2; i < numero; i++) {
+        if (numero % i == 0) {
+            alkuluku = false;
+    break;
+}
+}
+
+    if (alkuluku) {
+        document.write(numero + " on alkuluku");
+}   else {
+        document.write(numero + " ei ole alkuluku");
+}
+}
+
+
+    else {
+        document.write("Numero ei ole alkuluku.");
+}
+
+
+</script>
+
+</body>
+</html>

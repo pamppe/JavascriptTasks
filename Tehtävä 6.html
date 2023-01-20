@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+  let arpakuutio = +prompt("Kerro arpakuutioiden lukumäärä: ");
+  let kiinnostava = +prompt("Kerro sinua kiinnostavan silmälukujen summa: ");
+  let heittokerrat = arpakuutio;
+  let osumat = 0;
+  let summa1 = 0;
+
+  for(let x = 10000 ; x > 0 ; x--) {
+    heittokerrat = arpakuutio;
+    summa1 = 0;
+
+    while (heittokerrat > 0) {
+      summa1 += Math.floor(Math.random() * 6) + 1;
+
+      heittokerrat--;
+    }
+    if (summa1 === kiinnostava) {
+      osumat++;
+    }
+  }
+  let todennakoisuus = osumat/10000;
+
+  document.write("Todennäköisyys antamasi arpakuutioiden summan saamiseen on " + todennakoisuus);
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let luku1, luku2, summa;
+    luku2 = 0;
+    summa = 0;
+    luku1 = prompt("Anna arpakuutioiden lukumäärä");
+
+    while (luku2 < Number(luku1)){
+        const satunnainen = Math.floor(Math.random() * 6) + 1;
+        summa = summa + satunnainen;
+        luku2 ++;
+    }
+    document.write("Arpakuutioiden yhteen laskettu summa on : " + summa);
+
+
+</script>
+
+
+</body>
+</html>
