@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+        <h2>6.Tehtävä</h2>
+<p>
+    <script>
+
+        const luotigr = 13.3;
+        const naulagr = 32 * luotigr;
+        const leiviskägr = 20 * naulagr;
+
+        let leiviskä = +prompt("Syötä mitta leiviskänä ");
+        let naula = +prompt("Syötä kuinka monta naulaa ");
+        let luoti = +prompt("Syötä luotien määrä ");
+
+        let kokonaismassa = leiviskä * leiviskägr + naula * naulagr + luoti * luotigr
+        document.write("Massa on nykymittojen mukaan " + kokonaismassa.toFixed() + "<br>");
+
+        let kilot = Math.floor(kokonaismassa / 1000);
+        document.write("kilot " + kilot.toFixed() + "<br>");
+
+        let grammaa = (kokonaismassa %1000);
+        document.write("grammat " + grammaa.toFixed(2) + "<br>");
+
+    </script>
+</body>
+</html>
