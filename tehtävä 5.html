@@ -8,15 +8,25 @@
 
 <script>
 
-    let taulukko = prompt("Anna nimiä ").split(" ");
+  function samanumero() {
 
-    let vastaus2 = liita(taulukko);
-    document.write("Merkkijono " + vastaus2);
-    function liita(taulukko) {
-        return taulukko.join('');
+    let numerot = [];
+
+    while (true) {
+      let input = prompt("Numeroita");
+
+     for (var i = 0; i < numerot.length; i++) {
+         if (input == numerot[i]) {
+             window.alert("Älä laita samaa numeroa!");
+             return false;
+         }
+     }
+        numerot.push(input);
     }
-</script>
+  }
+  samanumero();
 
+</script>
 
 </body>
 </html>

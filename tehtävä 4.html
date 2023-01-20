@@ -8,28 +8,25 @@
 
 <script>
 
-  function suurin(a, b, c) {
-    if (a >= b && a >= c) {
-      return a + " on suurin";
+  function nolla() {
+
+    let numerot = [];
+
+    while (true) {
+      let input = prompt("Numeroita");
+
+      if (input == 0) {
+        return false;
+      }
+      numerot.push(input);
+      document.write(numerot); //Jotain outoo tapahtuu document writellä, mutta tämä toimii oikein console logilla
     }
 
-    else if (b >= a && b >= c) {
-      return b + " on suurin";
-    }
-
-    else {
-      return c + " on suurin";
-    }
   }
-
-    let num1 = +prompt("Anna numero");
-    let num2 = +prompt("Anna toinen numero");
-    let num3 = +prompt("Anna kolmas numero");
-    document.write(suurin(num1, num2, num3));
-
-
+      nolla();
 
 </script>
+
 
 </body>
 </html>

@@ -8,20 +8,26 @@
 
 <script>
 
-    let gallona, litra;
-    gallona = prompt("Anna gallona määrä");
 
-    muunnos();
 
-    function muunnos() {
-        litra = gallona * 3.785;
-        document.write("litroina määrä on " + litra + " litraa");
+    function vastakkain() {
+        let numero = prompt("Anna lukuja erottele ne välilyönnillä").split(" ");
+        document.write(numero);
+        console.log(numero);
 
-    return;
+        function takaperin() {
+            let vaarinpain = numero.reverse();
+            document.write('<br>', vaarinpain);
+            console.log(vaarinpain);
+        }
+        takaperin();
     }
+    vastakkain();
 
 
 </script>
+
+
 
 </body>
 </html>

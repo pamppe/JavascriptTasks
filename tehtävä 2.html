@@ -5,23 +5,23 @@
     <title>Title</title>
 </head>
 <body>
-
+<ol id="nimielementti"></ol>
 <script>
 
-  function muunnos(maara) {
-    let muunnosmaara = maara * 3.785;
-    return muunnosmaara;
+  function nimet() {
+    let nimilista = prompt("Anna pari nimee ja erottele ne välilyönnillä").split(" ");
+    let id = document.getElementById("nimielementti");
+
+    nimilista.forEach((object)=>{
+        let li = document.createElement("li");
+        li.innerText = object;
+        id.appendChild(li);
+    })
   }
-
-  let luku;
-  luku = +prompt("Anna bensa määrä gallonoina");
-
-  let tulos = muunnos(luku);
-
-  document.write(luku + " gallonaa on " + tulos + " bensaa litroina");
-
+    nimet();
 
 </script>
+
 
 </body>
 </html>

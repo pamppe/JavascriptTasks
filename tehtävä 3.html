@@ -5,20 +5,26 @@
     <title>Title</title>
 </head>
 <body>
-
+<ul id="nimielementti"></ul>
 <script>
 
-  function itseisarvo(luku) {
-    let arvo;
-    arvo = Math.abs(luku);
-    return arvo;
-  }
+    function koirat() {
+        let nimilista = prompt("Anna kuusi koiran nimee ja erottele ne välilyönnillä").split(" ");
+        let id = document.getElementById("nimielementti");
+        let s_nimilista = nimilista.sort((a,b)=> a.localeCompare(b));
 
-  let luku = +prompt("Anna luku");
-  let itseisArvo = itseisarvo(luku);
-  document.write("Luvun itseisarvo on " + itseisArvo);
+        s_nimilista.forEach((object)=>{
+            let li = document.createElement("li");
+            li.innerText = object;
+            id.appendChild(li);
+        })
+    }
+    koirat();
+
+
 
 </script>
+
 
 </body>
 </html>

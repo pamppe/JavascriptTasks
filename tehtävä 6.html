@@ -8,20 +8,23 @@
 
 <script>
 
-  function tasaluku(taulukko) {
-    let luku = [];
 
-    for(let i=0; i < taulukko.length; i++) {
-      let num = taulukko[i];
-      if(num % 2 === 0) {
-        luku.push(num);
-      }
+    let arr = prompt("Anna lukuja ja erottele luivut välilyönneillä").split(" ");
+    const etsiMedian = (arr = []) => {
+        const sorted = arr.slice().sort((a, b) => {
+            return a - b;
+        })
+        if(sorted.length % 2 === 0){
+            const eka = sorted[sorted.length / 2 - 1];
+            const toka = sorted[sorted.length / 2];
+            return (eka + toka) / 2;
+        }
+        else{
+            const mid = Math.floor(sorted.length / 2);
+            return sorted[mid];
+        }
     }
-    return luku;
-  }
-  let taulukko =[20,11,12,4,55,10,3,5,2,1];
-  let tulos = tasaluku(taulukko);
-  document.write("Parillisia on " + tulos);
+    document.write(etsiMedian(arr));
 
 
 </script>
